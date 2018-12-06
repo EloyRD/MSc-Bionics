@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="de" xml:lang="de">
+<head>
+    <title>Aufgabe</title>
+    <link rel="shortcut icon" href="https://moodle.hochschule-rhein-waal.de/theme/image.php/boost/theme/1503032710/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Aufgabe" />
+<link rel="stylesheet" type="text/css" href="https://moodle.hochschule-rhein-waal.de/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://moodle.hochschule-rhein-waal.de/theme/styles.php/boost/1503032710/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/moodle.hochschule-rhein-waal.de","sesskey":"ZCum0CAEu0","themerev":"1503032710","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1503032710","admin":"admin","svgicons":true,"usertimezone":"Europa\/Berlin","contextid":287904};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/moodle.hochschule-rhein-waal.de\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/moodle.hochschule-rhein-waal.de\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/moodle.hochschule-rhein-waal.de\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/moodle.hochschule-rhein-waal.de\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/moodle.hochschule-rhein-waal.de\/theme\/yui_combo.php?m\/1503032710\/","combine":true,"comboBase":"https:\/\/moodle.hochschule-rhein-waal.de\/theme\/yui_combo.php?","ext":false,"root":"m\/1503032710\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-block_xp-rulepicker"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-format_grid-gridkeys":{"requires":["event-nav-keys"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/moodle.hochschule-rhein-waal.de\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/moodle.hochschule-rhein-waal.de\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1503032710\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/moodle.hochschule-rhein-waal.de\/lib\/javascript.php\/1503032710\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/moodle.hochschule-rhein-waal.de\/lib\/javascript.php\/1503032710\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.1\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-mod-assign-view" class="format-topics  path-mod path-mod-assign safari dir-ltr lang-de yui-skin-sam yui3-skin-sam moodle-hochschule-rhein-waal-de pagelayout-incourse course-7912 context-287904 cmid-150856 category-1558 ">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Zum Hauptinhalt</a>
+</div><script type="text/javascript" src="https://moodle.hochschule-rhein-waal.de/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://moodle.hochschule-rhein-waal.de/lib/javascript.php/1503032710/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <header role="banner" class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex">
+    
+        <div class="container-fluid navbar-nav">
+    
+            <div data-region="drawer-toggle">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true" title="" aria-label=""></i><span class="sr-only">Website-Übersicht</span></button>
+            </div>
+    
+            <a href="https://moodle.hochschule-rhein-waal.de" class="navbar-brand 
+                    hidden-sm-down
+                    ">
+                <span class="site-name hidden-sm-down">Lernportal HSRW</span>
+            </a>
+    
+            <!-- user_menu -->
+            <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-1-menubar" role="menubar">
+
+            <div class="dropdown d-inline">
+    <a href="#" class="dropdown-toggle" id="dropdown-1" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="userbutton"><span class="usertext">Eloy-Javier Ruiz-Donayre</span><span class="avatars"><span class="avatar current"><img src="https://moodle.hochschule-rhein-waal.de/pluginfile.php/270647/user/icon/boost/f2?rev=2322462" alt="Porträt eloy Ruiz " title="Porträt eloy Ruiz " class="userpicture" width="35" height="35" role="presentation" /></span></span></span><b class="caret"></b></a>
+        <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+            <a href="https://moodle.hochschule-rhein-waal.de/my/" class="dropdown-item menu-action" role="menuitem"data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><i class="icon fa fa-tachometer fa-fw " aria-hidden="true" title="Dashboard" aria-label="Dashboard"></i><span class="menu-action-text" id="actionmenuaction-1">Dashboard</span></a><div class="dropdown-divider"></div><a href="https://moodle.hochschule-rhein-waal.de/user/profile.php?id=22596" class="dropdown-item menu-action" role="menuitem"data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><i class="icon fa fa-user fa-fw " aria-hidden="true" title="Profil" aria-label="Profil"></i><span class="menu-action-text" id="actionmenuaction-2">Profil</span></a><a href="https://moodle.hochschule-rhein-waal.de/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem"data-title="grades,grades" aria-labelledby="actionmenuaction-3"><i class="icon fa fa-table fa-fw " aria-hidden="true" title="Bewertungen" aria-label="Bewertungen"></i><span class="menu-action-text" id="actionmenuaction-3">Bewertungen</span></a><a href="https://moodle.hochschule-rhein-waal.de/message/index.php" class="dropdown-item menu-action" role="menuitem"data-title="messages,message" aria-labelledby="actionmenuaction-4"><i class="icon fa fa-comment fa-fw " aria-hidden="true" title="Mitteilungen" aria-label="Mitteilungen"></i><span class="menu-action-text" id="actionmenuaction-4">Mitteilungen</span></a><a href="https://moodle.hochschule-rhein-waal.de/user/preferences.php" class="dropdown-item menu-action" role="menuitem"data-title="preferences,moodle" aria-labelledby="actionmenuaction-5"><i class="icon fa fa-wrench fa-fw " aria-hidden="true" title="Einstellungen" aria-label="Einstellungen"></i><span class="menu-action-text" id="actionmenuaction-5">Einstellungen</span></a><div class="dropdown-divider"></div><a href="https://moodle.hochschule-rhein-waal.de/login/logout.php?sesskey=ZCum0CAEu0" class="dropdown-item menu-action" role="menuitem"data-title="logout,moodle" aria-labelledby="actionmenuaction-6"><i class="icon fa fa-sign-out fa-fw " aria-hidden="true" title="Logout" aria-label="Logout"></i><span class="menu-action-text" id="actionmenuaction-6">Logout</span></a>
+        </div>
+</div>
+
+
+        </div>
+
+</div></div>
+    
+            <!-- navbar_plugin_output -->
+            <div class="popover-region collapsed popover-region-messages"
+    id="nav-message-popover-container" data-userid="22596"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5a8c1cfa81fed5a8c1cfa7fa1610"
+        aria-haspopup="true"
+        aria-label="Mitteilungsfenster ohne neue Mitteilungen anzeigen"
+        tabindex="0">
+                <i class="icon fa fa-comment fa-fw " aria-hidden="true" title="Mitteilungen" aria-label="Mitteilungen"></i>
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div 
+        id="popover-region-container-5a8c1cfa81fed5a8c1cfa7fa1610"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Systemmitteilungen"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Mitteilungen</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+                <a href="https://moodle.hochschule-rhein-waal.de/message/index.php?contactsfirst=1">Neue Mitteilung
+                </a>
+        </div>
+        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button"
+                    href="#"
+                    role="button"
+                    title="Alle als gelesen markieren"
+                    data-action="mark-all-read">
+                    <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Alle als gelesen markieren" aria-label="Alle als gelesen markieren"></i></span>
+                    <span class="loading-icon"><img class="icon " alt="Wird geladen" title="Wird geladen" src="https://moodle.hochschule-rhein-waal.de/theme/image.php/boost/core/1503032710/y/loading" /></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Alle als gelesen markieren
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="https://moodle.hochschule-rhein-waal.de/message/edit.php?id=22596"
+                    title="Mitteilungen">
+                    <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Mitteilungen" aria-label="Mitteilungen"></i>
+                </a>
+
+    <div class="hover-tooltip">
+        Mitteilungen
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">Keine Mitteilungen</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Wird geladen" title="Wird geladen" src="https://moodle.hochschule-rhein-waal.de/theme/image.php/boost/core/1503032710/y/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://moodle.hochschule-rhein-waal.de/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Alle anzeigen</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="22596"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5a8c1cfa834f85a8c1cfa7fa1611"
+        aria-haspopup="true"
+        aria-label="Mitteilungsfenster ohne neue Benachrichtigungen anzeigen"
+        tabindex="0">
+                <i class="icon fa fa-bell fa-fw " aria-hidden="true" title="Systemmitteilungen" aria-label="Systemmitteilungen"></i>
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div 
+        id="popover-region-container-5a8c1cfa834f85a8c1cfa7fa1611"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Systemmitteilungen"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Systemmitteilungen</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button"
+                    href="#"
+                    title="Alle als gelesen markieren"
+                    data-action="mark-all-read"
+                    role="button">
+                    <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Alle als gelesen markieren" aria-label="Alle als gelesen markieren"></i></span>
+                    <span class="loading-icon"><img class="icon " alt="Wird geladen" title="Wird geladen" src="https://moodle.hochschule-rhein-waal.de/theme/image.php/boost/core/1503032710/y/loading" /></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Alle als gelesen markieren
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="https://moodle.hochschule-rhein-waal.de/message/notificationpreferences.php?userid=22596"
+                    title="Systemmitteilungen">
+                    <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Systemmitteilungen" aria-label="Systemmitteilungen"></i>
+                </a>
+
+    <div class="hover-tooltip">
+        Systemmitteilungen
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Keine Systemmitteilungen</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Wird geladen" title="Wird geladen" src="https://moodle.hochschule-rhein-waal.de/theme/image.php/boost/core/1503032710/y/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://moodle.hochschule-rhein-waal.de/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Alle anzeigen</div>
+                    </div>
+                </a>
+    </div>
+</div>
+    
+            <!-- search_box -->
+            <span class="hidden-md-down">
+            
+            </span>
+    
+            <nav class="nav navbar-nav hidden-md-down">
+                <!-- custom_menu -->
+                <div class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-5a8c1cfa849dd5a8c1cfa7fa1614" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+        Deutsch ‎(de)‎
+    </a>
+    <div class="dropdown-menu" aria-labelledby="drop-down-5a8c1cfa849dd5a8c1cfa7fa1614">
+                <a class="dropdown-item" href="https://moodle.hochschule-rhein-waal.de/mod/assign/view.php?id=150856&amp;rownum=0&amp;useridlistid=5a8c1cfa6d60e756158870&amp;action&amp;lang=de" title="Deutsch ‎(de)‎">Deutsch ‎(de)‎</a>
+                <a class="dropdown-item" href="https://moodle.hochschule-rhein-waal.de/mod/assign/view.php?id=150856&amp;rownum=0&amp;useridlistid=5a8c1cfa6d60e756158870&amp;action&amp;lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
+    </div>
+</div>
+                <!-- page_heading_menu -->
+                
+            </nav>
+        </div>
+    </header>
+    
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row"><div class="col-xs-12 p-a-1"><div class="card"><div class="card-block"><div class="pull-xs-right context-header-settings-menu"></div><div class="pull-xs-left"><div class="page-context-header"><div class="page-header-headings"><h1>Artificial Intelligence WS 2017/18</h1></div></div></div><div class="clearfix w-100 pull-xs-left" id="page-navbar"><div class="breadcrumb-nav"><nav role="navigation">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://moodle.hochschule-rhein-waal.de/" >Startseite</a></li>
+                <li class="breadcrumb-item">Meine Kurse</li>
+                <li class="breadcrumb-item"><a href="https://moodle.hochschule-rhein-waal.de/course/index.php?categoryid=136" >Faculty of Technology and Bionics / Fakultät Technologie und Bionik</a></li>
+                <li class="breadcrumb-item"><a href="https://moodle.hochschule-rhein-waal.de/course/index.php?categoryid=138" >Bionics / Biomimetics (M.Sc.)</a></li>
+                <li class="breadcrumb-item"><a href="https://moodle.hochschule-rhein-waal.de/course/index.php?categoryid=1555" >M_BB_E Elective Courses (Block E)</a></li>
+                <li class="breadcrumb-item"><a href="https://moodle.hochschule-rhein-waal.de/course/index.php?categoryid=1556" >M_BB_E_1 Computation and Modelling</a></li>
+                <li class="breadcrumb-item"><a href="https://moodle.hochschule-rhein-waal.de/course/index.php?categoryid=1558" >M_BB_E_1.2 Artificial Intelligence</a></li>
+                <li class="breadcrumb-item"><a href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7912" title="Artificial Intelligence WS 2017/18">AI WS 2017/18</a></li>
+                <li class="breadcrumb-item"><a href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7912#section-4" >Lecture Notes</a></li>
+                <li class="breadcrumb-item"><a href="https://moodle.hochschule-rhein-waal.de/mod/assign/view.php?id=150856" title="Aufgabe">Hill Climbing in Johnny's Pie</a></li>
+    </ol>
+</nav></div><div class="breadcrumb-button pull-xs-right"></div></div><div id="course-header"></div></div></div></div></header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-xs-12">
+                <section id="region-main" >
+                    <div class="card card-block">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><h2>Hill Climbing in Johnny's Pie</h2><div id="intro" class="box generalbox boxaligncenter p-y-1"><div class="no-overflow"><p style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-stretch: normal; font-size: 31px; line-height: normal; font-family: Arial; color: rgb(0, 0, 0); -webkit-text-stroke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0);"><span style="font-kerning: none; font-variant-ligatures: no-common-ligatures">how do you apply hill-climbing algorithm in the “Johnny’s pies domain”</span></p></div></div><div class="submissionstatustable"><h3>Abgabestatus</h3><div class="box boxaligncenter submissionsummarytable p-y-1"><table class="generaltable">
+<tbody><tr class="">
+<td class="cell c0" style="">Abgabestatus</td>
+<td class="cell c1 lastcol" style="">Kein Versuch</td>
+</tr>
+<tr class="">
+<td class="cell c0" style="">Bewertungsstatus</td>
+<td class="submissionnotgraded cell c1 lastcol" style="">Unbewertet</td>
+</tr>
+<tr class="">
+<td class="cell c0" style="">Fälligkeitsdatum</td>
+<td class="cell c1 lastcol" style="">Friday, 17. November 2017, 10:00</td>
+</tr>
+<tr class="">
+<td class="cell c0" style="">Verbleibende Zeit</td>
+<td class="overdue cell c1 lastcol" style=""><font color="red">Abgabeende überschritten seit: 95 Tage 4 Stunden</font></td>
+</tr>
+<tr class="">
+<td class="cell c0" style="">Zuletzt geändert</td>
+<td class="cell c1 lastcol" style="">-</td>
+</tr>
+<tr class="lastrow">
+<td class="cell c0" style="">Abgabekommentare</td>
+<td class="cell c1 lastcol" style=""><div class="box boxaligncenter plugincontentsummary summary_assignsubmission_comments_213742 p-y-1"><div class="commentscontainer"><div style="display:none" id="cmt-tmpl"><div class="comment-message"><div class="comment-message-meta m-r-3"><span class="picture">___picture___</span><span class="user">___name___</span> - <span class="time">___time___</span></div><div class="text">___content___</div></div></div><div class="mdl-left"><a class="showcommentsnonjs" href="https://moodle.hochschule-rhein-waal.de/mod/assign/view.php?id=150856&amp;rownum=0&amp;useridlistid=5a8c1cfa6d60e756158870&amp;action&amp;nonjscomment=1&amp;comment_itemid=213742&amp;comment_context=287904&amp;comment_component=assignsubmission_comments&amp;comment_area=submission_comments">Kommentare anzeigen</a><a class="comment-link" id="comment-link-5a8c1cfaa02de" href="#" role="button" aria-expanded="false"><i class="icon fa fa-plus-square fa-fw " aria-hidden="true" title="Kommentare" aria-label="Kommentare"></i><span id="comment-link-text-5a8c1cfaa02de">Kommentare (0)</span></a><div id="comment-ctrl-5a8c1cfaa02de" class="comment-ctrl"><ul id="comment-list-5a8c1cfaa02de" class="comment-list"><li class="first"></li></ul><div id="comment-pagination-5a8c1cfaa02de" class="comment-pagination"></div><div class="comment-area"><div class="db"><textarea name="content" rows="2" id="dlg-content-5a8c1cfaa02de" cols="20"></textarea></div><div class="fd" id="comment-action-5a8c1cfaa02de"><a id="comment-action-post-5a8c1cfaa02de" href="#">Kommentar speichern</a><span> | </span><a id="comment-action-cancel-5a8c1cfaa02de" href="#">Abbrechen</a></div></div><div class="clearer"></div></div></div></div></div></td>
+</tr>
+</tbody>
+</table>
+</div></div></div>
+                    
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7912" data-key="coursehome">
+                <div class="m-l-0">
+                        AI WS 2017/18
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/user/index.php?id=7912" data-key="participants">
+                <div class="m-l-0">
+                        Teilnehmer/innen
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/badges/view.php?type=2&amp;id=7912" data-key="badgesview">
+                <div class="m-l-0">
+                        Auszeichnungen
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/admin/tool/lp/coursecompetencies.php?courseid=7912" data-key="2">
+                <div class="m-l-0">
+                        Kompetenzen
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7912#section-0" data-key="216605">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true" title="" aria-label=""></i>
+                            </span>
+                            <span class="media-body">Allgemeines</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7912#section-2" data-key="216607">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true" title="" aria-label=""></i>
+                            </span>
+                            <span class="media-body">Organisational Topics</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7912#section-3" data-key="216608">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true" title="" aria-label=""></i>
+                            </span>
+                            <span class="media-body">Safety Rules</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action font-weight-bold" href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7912#section-4" data-key="216609">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true" title="" aria-label=""></i>
+                            </span>
+                            <span class="media-body">Lecture Notes</span>
+                        </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/" data-key="home">
+                <div class="m-l-0">
+                        Startseite
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/my/" data-key="home">
+                <div class="m-l-0">
+                        Dashboard
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/calendar/view.php?view=month" data-key="calendar">
+                <div class="m-l-0">
+                        Kalender
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/user/files.php" data-key="privatefiles">
+                <div class="m-l-0">
+                        Meine Dateien
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses">
+                <div class="m-l-0">
+                    Meine Kurse
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=2709" data-key="2709">
+                <div class="m-l-1">
+                        Timetable Faculty of Technology and Bionics 
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=5653" data-key="5653">
+                <div class="m-l-1">
+                        Fachschaftsrat techbio
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7969" data-key="7969">
+                <div class="m-l-1">
+                        Energy WS1718
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7968" data-key="7968">
+                <div class="m-l-1">
+                        LIFE WS1718
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7958" data-key="7958">
+                <div class="m-l-1">
+                        Patenting and Technology Transfer 2017/18
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7993" data-key="7993">
+                <div class="m-l-1">
+                        M_BB_106.1
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7995" data-key="7995">
+                <div class="m-l-1">
+                        M_BB_107.2
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=5419" data-key="5419">
+                <div class="m-l-1">
+                        Modelling and Simulation
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7912" data-key="7912">
+                <div class="m-l-1">
+                        AI WS 2017/18
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=4187" data-key="4187">
+                <div class="m-l-1">
+                        E2
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.hochschule-rhein-waal.de/course/index.php#" data-key="courseindexpage">
+                <div class="m-l-1">
+                        Mehr...
+                </div>
+            </a>
+        </nav>
+    </div>
+</div>
+<footer id="page-footer" class="p-y-1 bg-inverse">
+    <div class="container">
+        <div id="course-footer"></div>
+
+
+        <div class="logininfo">Sie sind angemeldet als <a href="https://moodle.hochschule-rhein-waal.de/user/profile.php?id=22596" title="Profil anzeigen">Eloy-Javier Ruiz-Donayre</a> (<a href="https://moodle.hochschule-rhein-waal.de/login/logout.php?sesskey=ZCum0CAEu0">Logout</a>)</div>
+        <div class="homelink"><a href="https://moodle.hochschule-rhein-waal.de/course/view.php?id=7912">AI WS 2017/18</a></div>
+        <nav class="nav navbar-nav hidden-lg-up">
+                <ul class="list-unstyled p-t-1">
+                                    <li><a href="#" title="Sprache">Deutsch ‎(de)‎</a></li>
+                                <li>
+                                    <ul class="list-unstyled m-l-1">
+                                                        <li><a href="https://moodle.hochschule-rhein-waal.de/mod/assign/view.php?id=150856&amp;rownum=0&amp;useridlistid=5a8c1cfa6d60e756158870&amp;action&amp;lang=de" title="Deutsch ‎(de)‎">Deutsch ‎(de)‎</a></li>
+                                                        <li><a href="https://moodle.hochschule-rhein-waal.de/mod/assign/view.php?id=150856&amp;rownum=0&amp;useridlistid=5a8c1cfa6d60e756158870&amp;action&amp;lang=en" title="English ‎(en)‎">English ‎(en)‎</a></li>
+                                    </ul>
+                                </li>
+                </ul>
+        </nav>
+        
+        <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://moodle.hochschule-rhein-waal.de/lib/requirejs.php/1503032710/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://moodle.hochschule-rhein-waal.de/lib/javascript.php/1503032710/lib/jquery/jquery-3.1.0.min',
+        jqueryui: 'https://moodle.hochschule-rhein-waal.de/lib/javascript.php/1503032710/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://moodle.hochschule-rhein-waal.de/lib/javascript.php/1503032710/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://moodle.hochschule-rhein-waal.de/lib/javascript.php/1503032710/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://moodle.hochschule-rhein-waal.de/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("de",{
+ "Play": "Wiedergabe",
+ "Pause": "Pause",
+ "Current Time": "Aktueller Zeitpunkt",
+ "Duration Time": "Dauer",
+ "Remaining Time": "Verbleibende Zeit",
+ "Stream Type": "Streamtyp",
+ "LIVE": "LIVE",
+ "Loaded": "Geladen",
+ "Progress": "Status",
+ "Fullscreen": "Vollbild",
+ "Non-Fullscreen": "Kein Vollbild",
+ "Mute": "Ton aus",
+ "Unmute": "Ton ein",
+ "Playback Rate": "Wiedergabegeschwindigkeit",
+ "Subtitles": "Untertitel",
+ "subtitles off": "Untertitel aus",
+ "Captions": "Untertitel",
+ "captions off": "Untertitel aus",
+ "Chapters": "Kapitel",
+ "You aborted the media playback": "Sie haben die Videowiedergabe abgebrochen.",
+ "A network error caused the media download to fail part-way.": "Der Videodownload ist aufgrund eines Netzwerkfehlers fehlgeschlagen.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "Das Video konnte nicht geladen werden, da entweder ein Server- oder Netzwerkfehler auftrat oder das Format nicht unterstützt wird.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "Die Videowiedergabe wurde entweder wegen eines Problems mit einem beschädigten Video oder wegen verwendeten Funktionen, die vom Browser nicht unterstützt werden, abgebrochen.",
+ "No compatible source was found for this media.": "Für dieses Video wurde keine kompatible Quelle gefunden.",
+ "Play Video": "Video abspielen",
+ "Close": "Schließen",
+ "Modal Window": "Modales Fenster",
+ "This is a modal window": "Dies ist ein modales Fenster",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "Durch Drücken der Esc-Taste bzw. Betätigung der Schaltfläche \"Schließen\" wird dieses modale Fenster geschlossen.",
+ ", opens captions settings dialog": ", öffnet Einstellungen für Untertitel",
+ ", opens subtitles settings dialog": ", öffnet Einstellungen für Untertitel",
+ ", selected": ", ausgewählt",
+ "Close Modal Dialog": "Modales Fenster schließen",
+ "Descriptions": "Beschreibungen",
+ "descriptions off": "Beschreibungen aus",
+ "The media is encrypted and we do not have the keys to decrypt it.": "Die Entschlüsselungsschlüssel für den verschlüsselten Medieninhalt sind nicht verfügbar.",
+ ", opens descriptions settings dialog": ", öffnet Einstellungen für Beschreibungen",
+ "Audio Track": "Tonspur"
+});
+
+    });
+});;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery'], function($) {
+    $('#single_select5a8c1cfa7fa1613').change(function() {
+        $('#single_select_f5a8c1cfa7fa1612').submit();
+    });
+});
+;
+
+require(['jquery'], function($) {
+    $('#single_select5a8c1cfa7fa1616').change(function() {
+        $('#single_select_f5a8c1cfa7fa1615').submit();
+    });
+});
+;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(287904, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.yui.add_module({"core_comment":{"name":"core_comment","fullpath":"https:\/\/moodle.hochschule-rhein-waal.de\/lib\/javascript.php\/1503032710\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}});
+
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Zuletzt ge\u00e4ndert","name":"Name","error":"Fehler","info":"Informationen","yes":"Ja","no":"Nein","ok":"OK","cancel":"Abbrechen","addcomment":"Kommentar hinzuf\u00fcgen...","comments":"Kommentare","commentscount":"Kommentare ({$a})","commentsrequirelogin":"Um die Kommentare zu sehen, m\u00fcssen Sie angemeldet sein.","deletecommentbyon":"Kommentar l\u00f6schen, der von {$a->user} am {$a->time} gepostet wurde","confirm":"Best\u00e4tigen","areyousure":"Sind Sie sicher?","closebuttontitle":"Schlie\u00dfen","unknownerror":"Unbekannter Fehler"},"repository":{"type":"Typ","size":"Gr\u00f6\u00dfe","invalidjson":"Ung\u00fcltiger JSON-Text","nofilesattached":"Keine Datei","filepicker":"Dateiauswahl","logout":"Abmelden","nofilesavailable":"Keine Dateien vorhanden","norepositoriesavailable":"Keine Ihrer aktuellen Repositories kann Dateien im n\u00f6tigen Format liefern","fileexistsdialogheader":"Datei bereits vorhanden","fileexistsdialog_editor":"Eine Datei mit diesem Namen wurde bereits an den Text angeh\u00e4ngt, den Sie gerade bearbeiten","fileexistsdialog_filemanager":"Eine Datei mit diesem Namen wurde bereits an den Text angeh\u00e4ngt","renameto":"Nach '{$a}' umbenennen","referencesexist":"{$a} Aliase\/Verkn\u00fcpfungen zu dieser Datei","select":"W\u00e4hlen Sie"},"admin":{"confirmdeletecomments":"M\u00f6chten Sie die Kommentare wirklich l\u00f6schen?","confirmation":"Best\u00e4tigung"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\n\n\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"de"});
+});
+Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random5a8c1cfa7fa1617'); Y.on('domready', function() {  M.util.js_pending('random5a8c1cfa7fa1617'); Y.use('core_comment', function(Y) { M.core_comment.init(Y, {"client_id":"5a8c1cfaa02de","commentarea":"submission_comments","itemid":"213742","page":0,"courseid":"7912","contextid":287904,"component":"assignsubmission_comments","notoggle":false,"autostart":false});  M.util.js_complete('random5a8c1cfa7fa1617'); });  M.util.js_complete('random5a8c1cfa7fa1617'); });
+ M.util.js_pending('random5a8c1cfa7fa1618'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5a8c1cfa7fa1618'); });
+})();
+//]]>
+</script>
+
+    </div>
+</footer>
+
+</body>
+</html>
